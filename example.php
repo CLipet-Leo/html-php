@@ -1,5 +1,4 @@
 <!-- signup -->
-
 <?php /*
 $sql = "SELECT * FROM user WHERE username=:username AND password=SHA1(:password)";
 $dataBinded=array(
@@ -20,7 +19,6 @@ header('Location: ../index.php')
 */?>
 
 <!-- login -->
-
 <?php // require_once "config.php"; ?>
 <html>
 <head>
@@ -37,7 +35,6 @@ header('Location: ../index.php')
 </html>
 
 <!-- logout -->
-
 <?php
  /*
 session_start();
