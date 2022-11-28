@@ -17,11 +17,11 @@
 <body id="site-dangan">
     <!--nav bar + dropdown structure -->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="projet1.html">Projet 1</a></li>
+        <li><a href="projet1.php">Projet 1</a></li>
         <li class="divider"></li>
-        <li><a href="projet2.html">Projet 2</a></li>
+        <li><a href="projet2.php">Projet 2</a></li>
         <li class="divider"></li>
-        <li><a href="projet3.html">Projet 3</a></li>
+        <li><a href="projet3.php">Projet 3</a></li>
     </ul>
     <div class="navbar-fixed">
         <nav>
@@ -30,7 +30,7 @@
                     <a href="#!" class="brand-logo center">Dongaronpa</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="index.html">Accueil</a></li>
+                        <li class="active"><a href="index.php">Accueil</a></li>
                         <li class="active"><a href="#">Infos</a></li>
                         <li class="active"><a href="#">Support</a></li>
                         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Projets<i
@@ -41,10 +41,10 @@
         </nav>
     </div>
     <ul class="sidenav" id="mobile-demo">
-        <li class="active"><a href="index.html">Accueil</a></li>
-        <li class="active"><a href="projet1.html">Projet 1</a></li>
-        <li class="active"><a href="projet2.html">Projet 2</a></li>
-        <li class="active"><a href="projet3.html">Projet 3</a></li>
+        <li class="active"><a href="index.php">Accueil</a></li>
+        <li class="active"><a href="projet1.php">Projet 1</a></li>
+        <li class="active"><a href="projet2.php">Projet 2</a></li>
+        <li class="active"><a href="projet3.php">Projet 3</a></li>
     </ul>
 
     <!-- parallax -->

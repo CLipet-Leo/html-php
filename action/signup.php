@@ -1,4 +1,4 @@
-<?php
+<?php /*
 $sql = "SELECT * FROM user WHERE username=:username AND password=SHA1(:password)";
 $dataBinded=array(
     ':username'   => $_POST['username'],
@@ -15,4 +15,4 @@ if(empty($user)){ //vérifie si le resultat est vide !
 }
 
 header('Location: ../index.php')
-?>
+*/?>
