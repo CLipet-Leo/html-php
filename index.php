@@ -1,12 +1,18 @@
+<!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    
+</head>
 
 
 <body>
-    <p>
-        Rebonjour !
-    </p>
+
+
+    <h1>Accueil</h1>
+    <?php /* mon code php */ ?>
+
+
 </body>
 
 
