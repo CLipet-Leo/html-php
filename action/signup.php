@@ -15,5 +15,4 @@ if(empty($user)){ //vérifie si le resultat est vide !
 }
 
 header('Location: ../index.php')
-
 ?>

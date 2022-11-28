@@ -9,6 +9,4 @@ $pdo = new PDO(
 );
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
 
-
-//c'est ici qu'on écrit du PHP.
 ?>
