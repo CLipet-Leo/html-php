@@ -1,3 +1,56 @@
-/* nouvelle feuille de style */
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 200px;
+}
+/* body */
+body{
+    background-color: rgb(50, 50, 50);
+}
 
-/* Bonjour !!! */
+/* menu nav */
+nav.acceuil div a.brand-logo{
+    padding-left: 10px;
+}
+
+/* parallax size */
+.parallax-container {
+    height: 400px;
+}
+div.parallax-container img{
+    width: 100% !important;
+}
+
+/* carousel */
+div#carousel{
+    margin: 50px;
+}
+div#carousel img{
+    width: 100%;
+}
+
+/* info card */
+div#team{
+    margin: 50px;
+}
+div.card{
+    width: 100%;
+    border-radius: 20px;
+}
+div.card div img{
+    width: 100%;
+}
+img#tom{
+    height: 50%;
+}
+
+/* support */
+a.modal-trigger{
+    margin-bottom: 20px;
+}
+
+
+/* footer */
+footer div.footer-copyright{
+    text-align: center;
+}
+

@@ -1,0 +1,86 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
+/* body */
+body#site-dangan{
+    background-image: url("../img/background-danganronpa.jpg") !important;
+    background-color: rgb(114, 108, 108);
+}
+body#site-music{
+    background-image: url("../img/music\ second\ background\ 3.jpg") !important;
+    background-color: rgb(53, 51, 51);
+    color: white;
+}
+body#site-sport{
+    background-image: url("../img/sport-second-background.jpg") !important;
+    background-color: rgb(122, 99, 99);
+    color: white;
+}
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+/* parallax size */
+.parallax-container {
+    height: 400px;
+}
+div.parallax-container img{
+    width: 100% !important;
+}
+
+/* text */
+div#text-pictures p{
+    font-size: 200%;
+    padding: 20px;
+    border-radius: 40px;
+}
+div#dangan p{
+    background-color: #8e24aa;
+}
+div#music p{
+    background-color: #b71c1c;
+}
+div#sport p{
+    background-color: #8bc34a;
+}
+
+
+
+/* title */
+h1{
+    width: 100%;
+}
+
+/* img size */
+div.parallax-container img{
+    width: 100%;
+}
+.materialboxed{
+    width: 100%;
+}
+
+/* footer */
+footer div.footer-copyright{
+    text-align: center;
+}
+
+
+@media screen and (max-device-width: 640px) {
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    footer div.container{
+        font-size: 14px;
+    }
+}
