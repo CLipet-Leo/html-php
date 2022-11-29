@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require_once "component/config.php"; ?>
+<?php require_once "cfg/config.php"; ?>
 <html>
 <head>
 <meta charset=UTF-8>
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 </head>
 <body>
-    <?php require "menu.php"; ?>
+    <?php require "component/menu.php"; ?>
 
     <?php
     $sql = "SELECT * FROM user"; 

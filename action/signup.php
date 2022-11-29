@@ -1,6 +1,6 @@
 <!-- #signup.php -->
 <?php 
-require_once "../component/config.php"; 
+require_once "../cfg/config.php"; 
 $sql = "INSERT INTO user(email,password,login) VALUES(:email,:password,:login)";
 $dataBinded=array(
     ':email'   => $_POST['email'],

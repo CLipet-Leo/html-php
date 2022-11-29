@@ -1,5 +1,5 @@
 <!-- #connexion.php -->
-<?php require_once "component/config.php"; ?>
+<?php require_once "cfg/config.php"; ?>
 <html>
  <head>
  <meta charset=UTF-8>
@@ -13,9 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
  </head>
  <body>
-  <?php require "menu.php"; ?>
+  <?php require "component/menu.php"; ?>
   <h1 class="center">Connexion</h1>
-  <form method="post" action="login.php">
+  <form method="post" action="action/login.php">
     <div class="row">
     <div class="input-field col m6 offset-m3" >
             <input type='email' name='email' />

@@ -1,6 +1,6 @@
 <!-- #login.php -->
 <?php 
-require_once "config.php"; 
+require_once "cfg/config.php"; 
 $sql = "SELECT * FROM user WHERE email='".$_POST['email']."' AND password='".$_POST['password']."'"; 
 $pre = $pdo->prepare($sql); 
 $pre->execute();
@@ -12,5 +12,5 @@ if(empty($user)){ //vérifie si le resultat est vide !
      $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
 }
 
-header('Location:index.php');//on le redirige sur la page d'accueil du site !
+header('Location:../index.php');//on le redirige sur la page d'accueil du site !
 ?>

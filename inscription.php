@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
  </head>
  <body>
-  <?php require "menu.php"; ?>
+  <?php require "component/menu.php"; ?>
 <h1 class="center">Inscription</h1>
 <form method="post" action="action/signup.php">
     <div class="row">
