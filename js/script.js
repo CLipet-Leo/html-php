@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({
-    
       indicators: true,
       });
     $('.dropdown-trigger').dropdown();
@@ -9,6 +8,7 @@ $(document).ready(function(){
     $('.modal').modal();
     $('.materialboxed').materialbox();
     });
+
     $('#easteregg1').on("click",function(){
       $("body").html("<video width='100%' style='margin:0 auto' src='img/gandalf.mp4'><video>");
       $("video").get(0).play();

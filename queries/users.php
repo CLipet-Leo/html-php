@@ -1,16 +1,14 @@
 <?php 
 require "cfg/config.php";
+session_start();
+$_SESSION;
 
 $_SESSION['user'] = $user;
 
 //je peux vérifier si l'utilisateur est connecté ou non
-if(isset($_SESSION['user'])){
-    echo "Bonjour ".$_SESSION['user']['login'];
+if(isset($_SESSION['user'])){ //vérifie si le resultat est vide !
+    echo "Bienvenue ".$_SESSION['user']['login'];
 }else{
     echo "Vous n'êtes pas connecté";
 }
-
-//isset permet de vérifier si une variable existe
-
-//unset($_SESSION['user']);
 ?>

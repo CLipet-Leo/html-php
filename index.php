@@ -13,19 +13,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 </head>
 <body>
-    <?php
-    require "component/menu.php";
+    <?php require "component/menu.php";
     $sql = "SELECT * FROM user"; 
     $pre = $pdo->prepare($sql); 
     $pre->execute();
     $data = $pre->fetchAll(PDO::FETCH_ASSOC);
-    if(isset($_SESSION['user'])){ //vérifie si le resultat est vide !
-        echo "Bienvenue ".$_SESSION['user']['login'];
-   }else{
-        echo "Vous n'êtes pas connecté";
-   }
     ?>
-     
+    <div class="center white-text">
+    <?php
+    if (isset($_SESSION['user'])){
+        echo "Bienvenue ".$_SESSION['user']['login'];
+    }
+    else{
+        echo "Vous n'êtes pas connecté";
+    }
+    ?>
+    </div>
+    
 
     <!-- parallax -->
     <div class="row hide-on-small-only">
