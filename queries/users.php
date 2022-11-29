@@ -1,9 +1,5 @@
 <?php 
-require "cfg/config.php";
-session_start();
-$_SESSION;
-
-$_SESSION['user'] = $user;
+require_once "cfg/config.php";
 
 //je peux vérifier si l'utilisateur est connecté ou non
 if(isset($_SESSION['user'])){ //vérifie si le resultat est vide !

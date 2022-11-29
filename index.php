@@ -13,24 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 </head>
 <body>
-    <?php require "component/menu.php";
-    $sql = "SELECT * FROM user"; 
-    $pre = $pdo->prepare($sql); 
-    $pre->execute();
-    $data = $pre->fetchAll(PDO::FETCH_ASSOC);
-    ?>
+<?php require "component/menu.php";?>
     <div class="center white-text">
     <?php
-    if (isset($_SESSION['user'])){
-        echo "Bienvenue ".$_SESSION['user']['login'];
-    }
-    else{
-        echo "Vous n'êtes pas connecté";
-    }
+        require "queries/admin.php"; 
+        require "queries/users.php";
     ?>
     </div>
     
-
     <!-- parallax -->
     <div class="row hide-on-small-only">
         <div class="parallax-container col s12">
