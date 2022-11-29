@@ -1,5 +1,6 @@
+<!-- #login.php -->
 <?php 
-require_once "../component/config.php"; 
+require_once "config.php"; 
 $sql = "SELECT * FROM user WHERE email='".$_POST['email']."' AND password='".$_POST['password']."'"; 
 $pre = $pdo->prepare($sql); 
 $pre->execute();

@@ -9,13 +9,13 @@
 <div class="navbar-fixed">
     <nav class="acceuil">
         <div class="nav-wrapper deep-orange accent-3">
-            <a href="#!" class="brand-logo">Portfolio</a>
+            <a href="index.php" class="brand-logo">Portfolio</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <!-- bouton d'inscription -->
-                <li><a href="action/signup.php">Inscription</a></li>
+                <li><a href="inscription.php">Inscription</a></li>
                 <!-- bouton de connexion -->
-                <li><a href="action/login.php">Connexion</a></li>
+                <li><a href="connexion.php">Connexion</a></li>
                 <li><a href="#team">Équipe</a></li>
                 <li><a href="#carousel">Présentation</a></li>
                 <li><a class="modal-trigger" href="#modal1">Support</a></li>

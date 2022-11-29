@@ -23,7 +23,7 @@
    
     foreach($data as $user){ ?>
     <div class="bloc_user">
-        <h2><?php echo $user['first_name']." ".$user['last_name'] ?></h2>
+        <h2><?php echo $user['login'] ?></h2>
         <span class="email"><?php echo $user['email'] ?></span>
     </div>
     <?php } ?>
@@ -118,7 +118,7 @@
                     <div class="row">
                         <div class="input-field col m3 offset-m3">
                             <input placeholder="" id="first_name" type="text" class="validate">
-                            <label for="first_name">First Name</label>
+                            <label for="first_name">Prénom</label>
                           </div>
                         <div class="input-field col m3">
                             <input placeholder="" id="last_name" type="text" class="validate">
