@@ -14,7 +14,7 @@
  </head>
  <body>
   <?php require "component/menu.php"; ?>
-  <h1 class="center">Connexion</h1>
+  <h1 class="center white-text">Connexion</h1>
   <form method="post" action="action/login.php">
     <div class="row">
     <div class="input-field col m6 offset-m3" >
@@ -25,9 +25,17 @@
             <input type='password' name='password' />
             <label for="password">Mot de passe</label>
         </div>
-        <input class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type='submit' value='Me connecter' />
+        </div>
+        <div class="center">
+                <button class="btn waves-effect waves-light deep-orange" type='submit' value='Me connecter'>Me connecter</button>
         </div>
   </form>
+  <?php 
+    if(isset($_SESSION['error'])){
+        echo $_SESSION['error'];
+        unset($_SESSION['error']);
+    }
+  ?>
 
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/jquery.min.js"></script>

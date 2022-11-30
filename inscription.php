@@ -13,7 +13,7 @@
  </head>
  <body>
   <?php require "component/menu.php"; ?>
-<h1 class="center">Inscription</h1>
+<h1 class="center white-text">Inscription</h1>
 <form method="post" action="action/signup.php">
     <div class="row">
         <div class="input-field col m6 offset-m3" >
@@ -28,7 +28,9 @@
             <input type='text' name='login' />
             <label for="text">Pseudo</label>
         </div>
-        <input class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type='submit' value="M'inscrire" />
+        <div class="center">
+                <button class="btn waves-effect waves-light deep-orange" type='submit' value="M'inscrire">M'inscrire</button>
+        </div>
     </div>  
 </form>
 
