@@ -16,8 +16,11 @@
 <?php require "component/menu.php";?>
     <div class="center white-text">
     <?php
-        require "queries/admin.php"; 
+    if(isset($_SESSION['user']) AND $_SESSION['user']['admin']==1){
+        require "action/admin.php"; 
+    }else if (isset($_SESSION['user'])){
         require "queries/users.php";
+    } 
     ?>
     </div>
     
