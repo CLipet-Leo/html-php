@@ -17,17 +17,17 @@
   <h1 class="center white-text">Connexion</h1>
   <form method="post" action="action/login.php">
     <div class="row">
-    <div class="input-field col m6 offset-m3" >
-            <input type='email' name='email' />
-            <label for="email">Email</label>
-        </div>
-        <div class="input-field col m6 offset-m3" >
-            <input type='password' name='password' />
-            <label for="password">Mot de passe</label>
-        </div>
-        <div class="center">
-                <button class="btn waves-effect waves-light deep-orange" type='submit' value='Me connecter'>Me connecter</button>
-        </div>
+      <div class="input-field col m6 offset-m3" >
+        <input type='email' name='email' />
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field col m6 offset-m3" >
+        <input type='password' name='password' />
+        <label for="password">Mot de passe</label>
+      </div>
+      <div class="center">
+        <button class="btn waves-effect waves-light deep-orange" type='submit' value='Me connecter'>Me connecter</button>
+      </div>
     </div>
         
   </form>

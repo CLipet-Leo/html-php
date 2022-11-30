@@ -20,6 +20,7 @@
         require "action/admin.php"; 
     }else if (isset($_SESSION['user'])){
         require "queries/users.php";
+        require "paneladmin.php";
     } 
     ?>
     </div>

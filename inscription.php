@@ -1,4 +1,5 @@
 <!-- #inscription.php -->
+<?php require_once "cfg/config.php"; ?>
 <html>
  <head>
  <meta charset=UTF-8>
@@ -12,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
  </head>
  <body>
-  <?php require "component/menu.php"; ?>
+<?php require "component/menu.php"; ?>
 <h1 class="center white-text">Inscription</h1>
 <form method="post" action="action/signup.php">
     <div class="row">
@@ -29,7 +30,7 @@
             <label for="text">Pseudo</label>
         </div>
         <div class="center">
-                <button class="btn waves-effect waves-light deep-orange" type='submit' value="M'inscrire">M'inscrire</button>
+            <button class="btn waves-effect waves-light deep-orange" type='submit' value="M'inscrire">M'inscrire</button>
         </div>
     </div>  
 </form>
