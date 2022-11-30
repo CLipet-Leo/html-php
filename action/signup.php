@@ -9,6 +9,17 @@ $dataBinded=array(
 );
 $pre = $pdo->prepare($sql);
 $pre->execute($dataBinded);
-
-header('Location:../index.php');//on le redirige sur la page d'accueil du site !
+if(empty($_POST['email'])){
+  $_SESSION['error']="E-mail vide";
+  header('Location:../inscription.php'); 
+}else if(empty($_POST['password'])){
+  $_SESSION['error']="Mot de passe vide";
+  header('Location:../inscription.php'); 
+}else if(empty($_POST['login'])){
+  $_SESSION['error']="Pseudo vide";
+  header('Location:../inscription.php'); 
+}else{
+    $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
+    header('Location:../index.php');//on le redirige sur la page d'accueil du site !
+}
 ?>

@@ -33,6 +33,12 @@
         </div>
     </div>  
 </form>
+<?php 
+    if(isset($_SESSION['error'])){
+        echo $_SESSION['error'];
+        unset($_SESSION['error']);
+    }
+  ?>
 
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -25,10 +25,11 @@
             <input type='password' name='password' />
             <label for="password">Mot de passe</label>
         </div>
-        </div>
         <div class="center">
                 <button class="btn waves-effect waves-light deep-orange" type='submit' value='Me connecter'>Me connecter</button>
         </div>
+    </div>
+        
   </form>
   <?php 
     if(isset($_SESSION['error'])){
