@@ -19,6 +19,7 @@
             <a href="index.php" class="brand-logo">Portfolio</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
+                <li><a href="project.php">Project</a></li>
                 <li><a href="#team">Équipe</a></li>
                 <li><a href="#carousel">Présentation</a></li>
                 <li><a class="modal-trigger" href="#modal1">Support</a></li>

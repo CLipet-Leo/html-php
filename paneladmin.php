@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <?php require_once "cfg/config.php"; ?>
 
-<body>
-    <div><?php echo $projet['projet'] ?>
-        <form method="post" action="action/projet.php">
-            <input type="hidden" name="id" value="<?php echo $projet['id'] ?>">
-            <textarea name="project" rows="8" cols="80"><?php echo $projet['projet'] ?></textarea>
-            <button type="submit">Suprimer</button>
-        </form>
-    </div>
-    <?php //foreach end; 
-    ?>
-    <h2> Liste users</h2>
-    <?php require "queries/users.php";
-    foreach ($userList as $user); ?>
+<h1>Liste des utilisateurs</h1>
+<?php
+$sql = "SELECT * FROM user";
+$pre = $pdo->prepare($sql);
+$pre->execute();
+$data = $pre->fetchAll(PDO::FETCH_ASSOC);
 
-    <div>
-        <h2><?php echo $user['username'] ?></h2>
-        <form method="post" action="action/delate_project.php">
-            <input type="hidden" name="id" value="<?php echo $projet['id'] ?>">
-            <textarea name="project" rows="8" cols="80"><?php echo $projet['username'] ?></textarea>
-            <button type="submit">Suprimer le projet </button>
-        </form>
-    </div>
-
-    <h2> Liste users </h2>
-    <?php
-    require "queries/users.php";
-    foreach ($userList as $user); ?>
-    <div>
-        <h2><?php echo $user['username'] ?></h2>
+foreach ($data as $user) { ?>
+    <div class="bloc_user">
+        <h2><?php echo $user['login'] ?></h2>
+        <span class="email"><?php echo $user['email'] ?></span>
         <form method="post" action="action/update_user.php">
-            <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
-            <textarea name="username" rows="8" cols="80"><?php echo $user['username'] ?></textarea>
-            <button type="submit">Modifier users</button>
+            <input type="hidden" name="login" value="<?php echo $user['login'] ?>">
+            <button type="submit">Modifier utilisateurs</button>
         </form>
-    </div>44AdminListe users22
-    <h2><?php echo $user['username'] ?></h2>
-    <form method="post" action="action/update_user.php">
-        <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
-        <textarea name="username" rows="8" cols="80"><?php echo $user['username'] ?></textarea>
-        <button type="submit">Modifier</button>
-    </form>44admiAdmin : n==1?""Oui:""Nondelate<html>
+    </div>
+<?php } ?>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
+<div>
+    <form method="post" action="action/delete_user.php">
+        <input type="hidden" name="login" value="<?php $user['login'] ?>">
+        <textarea name="login" rows="8" cols="50"></textarea>
+        <button type="submit">Supprimer utilisateurs</button>
+    </form>
+</div>
+
+
+<div>
+    <form method="post" action="action/add_project.php">
+        <input type="hidden" name="project" value="<?php echo $projet['id'] ?>">
+        <textarea name="project" rows="8" cols="80"></textarea>
+        <button type="submit">Ajouter un projet </button>
+    </form>
+    <form method="post" action="action/del_project.php">
+        <input type="hidden" name="project" value="<?php echo $projet['id'] ?>">
+        <textarea name="project" rows="8" cols="80"></textarea>
+        <button type="submit">Supprimer le projet </button>
+    </form>
+</div>

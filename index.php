@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <?php require_once "cfg/config.php"; ?>
 <html>
+
 <head>
-<meta charset=UTF-8>
+    <meta charset=UTF-8>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" >
-    <link type="text/css" rel="stylesheet" href="css/style.css" >
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
 
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<?php require "component/menu.php";?>
+    <?php require "component/menu.php"; ?>
     <div class="center white-text">
-    <?php
-    if(isset($_SESSION['user']) AND $_SESSION['user']['admin']==1){
-        require "action/admin.php"; 
-    }else if (isset($_SESSION['user'])){
-        require "queries/users.php";
-        require "paneladmin.php";
-    } 
-    ?>
+        <?php
+        if (isset($_SESSION['user']) and $_SESSION['user']['admin'] == 1) {
+            require "action/admin.php";
+            require "paneladmin.php";
+        } else if (isset($_SESSION['user'])) {
+            require "queries/users.php";
+        } ?>
     </div>
-    
+
     <!-- parallax -->
     <div class="row hide-on-small-only">
         <div class="parallax-container col s12">
@@ -43,12 +44,10 @@
                     <img id="tom" class="activator circle" src="img/tom.jpg" alt="Portfolio - Léo Clipet - Tom Forest - Danganronpa - musique - sport">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator black-text text-darken-4">Tom FOREST<i
-                            class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator black-text text-darken-4">Tom FOREST<i class="material-icons right">more_vert</i></span>
                 </div>
                 <div class="card-reveal blue-grey darken-2">
-                    <span class="card-title black-text text-darken-4">Tom FOREST<i
-                            class="material-icons right">close</i></span>
+                    <span class="card-title black-text text-darken-4">Tom FOREST<i class="material-icons right">close</i></span>
                     <p>Hey, c'est Tom geek et guitariste à ses heures perdues.</p>
                 </div>
             </div>
@@ -59,12 +58,10 @@
                     <img class="activator circle" src="img/profil-moi.jpg" alt="Portfolio - Léo Clipet - Tom Forest - Danganronpa - musique - sport">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator black-text text-darken-4">Léo CLIPET<i
-                            class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator black-text text-darken-4">Léo CLIPET<i class="material-icons right">more_vert</i></span>
                 </div>
                 <div class="card-reveal blue-grey darken-2">
-                    <span class="card-title black-text text-darken-4">Léo CLIPET<i
-                            class="material-icons right">close</i></span>
+                    <span class="card-title black-text text-darken-4">Léo CLIPET<i class="material-icons right">close</i></span>
                     <p>
                         Salut ! <br>
                         Moi c'est Léo, élève chez Gaming Campus en Gtech 1.
@@ -115,7 +112,7 @@
                         <div class="input-field col m3 offset-m3">
                             <input placeholder="" id="first_name" type="text" class="validate">
                             <label for="first_name">Prénom</label>
-                          </div>
+                        </div>
                         <div class="input-field col m3">
                             <input placeholder="" id="last_name" type="text" class="validate">
                             <label for="last_name">Nom</label>
@@ -130,8 +127,7 @@
                             <input placeholder="" id="icon_telephone" type="tel" class="validate">
                             <label for="icon_telephone">Téléphone</label>
                         </div>
-                        <button class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type="submit"
-                            name="action">Envoyer
+                        <button class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type="submit" name="action">Envoyer
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
@@ -166,4 +162,5 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
