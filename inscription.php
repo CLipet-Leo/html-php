@@ -29,10 +29,11 @@
             <input type='text' name='login' />
             <label for="text">Pseudo</label>
         </div>
-        <div class="center">
-            <button class="btn waves-effect waves-light deep-orange" type='submit' value="M'inscrire">M'inscrire</button>
-        </div>
     </div>  
+    <div class="center">
+        <button class="btn waves-effect waves-light deep-orange" type='submit' value="M'inscrire">M'inscrire</button>
+    </div>
+
 </form>
 <?php 
     if(isset($_SESSION['error'])){
