@@ -1,8 +1,8 @@
 <?php 
 require_once "../cfg/config.php"; 
-$sql = "DELETE  FROM user WHERE login=:login";
+$sql = "DELETE FROM user WHERE id=:id";
 $dataBinded=array(
-    ':login' => $_POST['login']
+    ':id' => $_POST['id']
 );
 $pre = $pdo->prepare($sql);
 $pre->execute($dataBinded);

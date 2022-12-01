@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php require "component/menu.php"; ?>
+    <?php require "component/navbar.php"; ?>
     <div class="center white-text">
         <?php
         if (isset($_SESSION['user']) and $_SESSION['user']['admin'] == 1) {
@@ -25,7 +25,8 @@
             require "queries/users.php";
         } ?>
     </div>
-
+    <?php require "component/menu.php"; ?>
+    
     <!-- parallax -->
     <div class="row hide-on-small-only">
         <div class="parallax-container col s12">

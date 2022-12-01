@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php require "component/menu.php"; ?>
+    <?php require "component/navbar.php"; ?>
     <div class="center white-text">
         <?php
         if (isset($_SESSION['user']) and $_SESSION['user']['admin'] == 1) {
@@ -25,9 +25,13 @@
             require "queries/users.php";
         }
         ?>
+    <?php require "component/menu.php"; ?>
     </div>
-    <?php require "queries/one_project.php";?>
-
+    <?php require "queries/one_project.php"; 
+    //foreach($projectList as $project); ?>
+    <h1><?php echo $project['h1'] ?></h1>
+    <img src="<?php echo $project['img'] ?>" alt="">
+    <p><?php echo $project['text'] ?></p>
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.min.js"></script>

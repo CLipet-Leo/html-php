@@ -27,16 +27,16 @@ foreach ($data as $user) { ?>
     </form>
 </div>
 
+<form  action="action/add_project.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="h1" placeholder="Titre">
+    <textarea name="text" rows="8" cols="50" placeholder="text"></textarea>
+    <input type="file" name="img">
+    <button type="submit">Ajouter un project </button>
+</form>
 
-<div>
-    <form method="post" action="action/add_project.php">
-        <input type="hidden" name="project" value="<?php echo $projet['id'] ?>">
-        <textarea name="project" rows="8" cols="80"></textarea>
-        <button type="submit">Ajouter un projet </button>
-    </form>
-    <form method="post" action="action/del_project.php">
-        <input type="hidden" name="project" value="<?php echo $projet['id'] ?>">
-        <textarea name="project" rows="8" cols="80"></textarea>
-        <button type="submit">Supprimer le projet </button>
-    </form>
-</div>
+
+<!-- <form method="post" action="action/del_project.php">
+    <input type="hidden" name="project" value="<?php echo $project['id'] ?>">
+    <textarea name="project" rows="8" cols="80"></textarea>
+    <button type="submit">Supprimer le project </button>
+</form> -->
