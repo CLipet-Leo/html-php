@@ -14,17 +14,17 @@ foreach ($data as $user) { ?>
         <span class="email"><?php echo $user['email'] ?></span>
         <form method="post" action="action/update_user.php">
             <input type="hidden" name="login" value="<?php echo $user['login'] ?>">
-            <button type="submit">Modifier utilisateurs</button>
+            <button type="submit">Modifier admin</button>
+        </form>
+        <form method="post" action="action/delete_user.php">
+            <input type="hidden" name='id' value="<?php echo $user['id'] ?>">
+            <button type="submit">Supprimer utilisateurs</button>
         </form>
     </div>
 <?php } ?>
 
 <div>
-    <form method="post" action="action/delete_user.php">
-        <input type="hidden" name="login" value="<?php $user['login'] ?>">
-        <textarea name="login" rows="8" cols="50"></textarea>
-        <button type="submit">Supprimer utilisateurs</button>
-    </form>
+    
 </div>
 
 <form  action="action/add_project.php" method="POST" enctype="multipart/form-data">

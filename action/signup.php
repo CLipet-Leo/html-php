@@ -1,10 +1,10 @@
 <!-- #signup.php -->
 <?php
 require_once "../cfg/config.php";
-$sql = "INSERT INTO user(email,password,login) VALUES(:email,:password,:login)";
+$sql = "INSERT INTO user(email,password,login) VALUES(:email,SHA1(:password),:login)";
 $dataBinded = array(
   ':email'   => $_POST['email'],
-  ':password' => $_POST['password'],
+  ':password' => "fguzhyfaoizej6136jh1Hbeéç".$_POST['password'],
   ':login' => $_POST['login']
 );
 if (($_SESSION['error'] = "E-mail vide") or ($_SESSION['error'] = "Mot de passe vide") or ($_SESSION['error'] = "Pseudo vide")) {

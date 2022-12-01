@@ -27,16 +27,15 @@
         ?>
     <?php require "component/menu.php"; ?>
     </div>
-    <?php require "queries/one_project.php"; 
-    //foreach($projectList as $project); ?>
+    <?php require_once "queries/one_project.php"; 
+    foreach($projectList as $project){ ?>
     <h1><?php echo $project['h1'] ?></h1>
     <img src="<?php echo $project['img'] ?>" alt="">
     <p><?php echo $project['text'] ?></p>
-
+    <?php } ?>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
-
 </html>

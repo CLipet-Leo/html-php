@@ -1,9 +1,6 @@
-<?php 
-$sql = "SELECT * FROM project WHERE id=:id";
-$dataBinded=array(
-    ":id"=>$_GET['id']
-);
+<?php
+$sql = "SELECT * FROM project";
 $pre = $pdo->prepare($sql);
-$pre->execute($dataBinded);
-$project = $pre->fetch(PDO::FETCH_ASSOC);
+$pre->execute();
+$project = $pre->fetchAll(PDO::FETCH_ASSOC);
 ?>

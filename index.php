@@ -107,22 +107,22 @@
                 <div class="support-title">
                     <h2 class="center">Support</h2>
                 </div>
-                <form class="col s12 m10 offset-m1">
+                <form class="col s12 m10 offset-m1" method="post" action="action/email.php">
                     <div class="row">
                         <div class="input-field col m3 offset-m3">
-                            <input placeholder="" id="first_name" type="text" class="validate">
+                            <input name='objet' placeholder='' id="first_name" type="text" class="validate">
                             <label for="first_name">objet</label>
                         </div>
                         <div class="input-field col m3">
-                            <input placeholder="" id="last_name" type="text" class="validate">
+                            <input name='message' placeholder="" id="last_name" type="text" class="validate">
                             <label for="last_name">message</label>
                         </div>
                         <div class="input-field col m4 offset-m4">
                             <i class="material-icons prefix">email</i>
-                            <input placeholder="" id="email" type="email" class="validate">
+                            <input name='email' placeholder='' id="email" type="email" class="validate">
                             <label for="email">Email</label>
                         </div>
-                        <button class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type="submit" name="action">Envoyer
+                        <button class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type="submit">Envoyer
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
