@@ -25,7 +25,6 @@
             require "queries/users.php";
         } ?>
     </div>
-    <?php require "component/menu.php"; ?>
     
     <!-- parallax -->
     <div class="row hide-on-small-only">
@@ -112,21 +111,16 @@
                     <div class="row">
                         <div class="input-field col m3 offset-m3">
                             <input placeholder="" id="first_name" type="text" class="validate">
-                            <label for="first_name">Prénom</label>
+                            <label for="first_name">objet</label>
                         </div>
                         <div class="input-field col m3">
                             <input placeholder="" id="last_name" type="text" class="validate">
-                            <label for="last_name">Nom</label>
+                            <label for="last_name">message</label>
                         </div>
                         <div class="input-field col m4 offset-m4">
                             <i class="material-icons prefix">email</i>
                             <input placeholder="" id="email" type="email" class="validate">
                             <label for="email">Email</label>
-                        </div>
-                        <div class="input-field col m4 offset-m4">
-                            <i class="material-icons prefix">phone</i>
-                            <input placeholder="" id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Téléphone</label>
                         </div>
                         <button class="btn waves-effect waves-light deep-orange accent-3 col m2 offset-m5" type="submit" name="action">Envoyer
                             <i class="material-icons right">send</i>

@@ -36,7 +36,7 @@ foreach ($data as $user) { ?>
 
 
 <!-- <form method="post" action="action/del_project.php">
-    <input type="hidden" name="project" value="<?php echo $project['id'] ?>">
+    <input type="hidden" name="project" value="<?php //echo $project['id'] ?>">
     <textarea name="project" rows="8" cols="80"></textarea>
     <button type="submit">Supprimer le project </button>
 </form> -->

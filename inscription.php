@@ -14,7 +14,6 @@
  </head>
  <body>
 
-<?php require "component/menu.php"; ?>
 <?php require "component/navbar.php"; ?>
 
 <h1 class="center white-text">Inscription</h1>
