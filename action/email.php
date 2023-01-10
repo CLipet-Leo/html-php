@@ -1,5 +1,5 @@
 <?php
-$email = "tforest@gaming.tech";
+$email = "lclipet@gaming.tech";
 $objet = $_POST['objet'];
 $content = $_POST['message']."<br><br>Email from : ".$_POST['email'];
 print_r($email,$content);
